@@ -34,7 +34,7 @@ header {
 nav {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 1.2rem 2rem;
+  padding: 0.5rem 0.5rem;
 
   display: flex;
   align-items: center;
@@ -647,16 +647,14 @@ nav {
 
   .navlinks {
     position: fixed;
-
+    font-weight: bold;
     top: 0;
     right: -100%;
 
-    width: 75%;
-    height: 100vh;
+    width: 100%;
+    height: 60vh;
 
     background: var(--bg-surface);
-
-    border-left: 1px solid var(--border);
 
     flex-direction: column;
     justify-content: center;
@@ -666,6 +664,7 @@ nav {
     transition: right 0.3s ease;
 
     z-index: 1000;
+    margin-top: 15%;
   }
 
   .navlinks.active {
